@@ -1,5 +1,3 @@
-autocmd FileType python set tabstop=4 | set expandtab | set autoindent
-
 set number
 set cursorline
 set wrap
@@ -21,4 +19,10 @@ noremap K 5j
 
 noremap S :w<CR>
 noremap Q :q<CR>
+
+set expandtab  
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
 
