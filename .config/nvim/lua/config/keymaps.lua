@@ -22,5 +22,6 @@ keymap.set({ "n", "v", "s", "o" }, "Q", ":q<CR>", { noremap = true, desc = "Quit
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>j", ":NvimTreeFocus<CR>")
 
 
