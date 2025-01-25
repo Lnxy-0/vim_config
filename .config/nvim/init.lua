@@ -1,5 +1,5 @@
-require("core.options")
-require("core.keymaps")
+require("config.options")
+require("config.keymaps")
 require("config.lazy")
 
 vim.g.loaded_netrw = 1
