@@ -1,0 +1,11 @@
+{
+    "suggest.noselect": true,          
+    "codeLens.enable": true,
+    "list.previousKeymap":"<C-j>",
+    "list.nextKeymap": "<C-k>",
+    "pyright.inlayHints.parameterTypes": false,
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
+    "coc.preferences.maxFileSize": "10MB"
+}
+

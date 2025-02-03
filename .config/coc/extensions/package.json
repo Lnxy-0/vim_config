@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "coc-marketplace": ">=1.9.0",
+    "coc-lua": ">=2.0.6",
+    "coc-pyright": ">=1.1.390",
+    "coc-json": ">=1.9.2"
+  }
+}

@@ -1,0 +1,867 @@
+[05:49:10.209][info] [#0:/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:68]: Lua Lsp startup, root: 	/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server
+[05:49:10.209][info] [#0:/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:69]: ROOT:	/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server
+[05:49:10.209][info] [#0:/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:70]: LOGPATH:	/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/log
+[05:49:10.209][info] [#0:/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:71]: METAPATH:	/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta
+[05:49:10.209][info] [#0:/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:72]: VERSION:	3.13.5
+[05:49:10.252][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[05:49:10.252][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.254 MB
+        # 00 : 2.254 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:49:10.365][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      markdown = {
+        parser = "marked",
+        version = "7.0.5"
+      },
+      positionEncodings = { "utf-16" },
+      regularExpressions = {
+        engine = "ECMAScript",
+        version = "ES2020"
+      },
+      staleRequestSupport = {
+        cancel = true,
+        retryOnContentModified = { "textDocument/inlayHint", "textDocument/semanticTokens/full", "textDocument/semanticTokens/range", "textDocument/semanticTokens/full/delta" }
+      }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = true
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        disabledSupport = true,
+        dynamicRegistration = true,
+        honorsChangeAnnotations = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = true
+      },
+      colorProvider = {
+        dynamicRegistration = true
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode" }
+        },
+        contextSupport = true,
+        dynamicRegistration = true,
+        insertTextMode = 2
+      },
+      declaration = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = true,
+        relatedDocumentSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = true
+      },
+      documentLink = {
+        dynamicRegistration = true,
+        tooltipSupport = true
+      },
+      documentSymbol = {
+        dynamicRegistration = true,
+        hierarchicalDocumentSymbolSupport = true,
+        labelSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = true,
+        foldingRange = {
+          collapsedText = false
+        },
+        foldingRangeKind = {
+          valueSet = { "comment", "imports", "region" }
+        },
+        lineFoldingOnly = true,
+        rangeLimit = 5000
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "tooltip", "textEdits", "label.tooltip", "label.location", "label.command" }
+        }
+      },
+      inlineValue = {
+        dynamicRegistration = true
+      },
+      linkedEditingRange = {
+        dynamicRegistration = true
+      },
+      onTypeFormatting = {
+        dynamicRegistration = true
+      },
+      publishDiagnostics = {
+        codeDescriptionSupport = true,
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        },
+        versionSupport = true
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = true
+      },
+      rename = {
+        dynamicRegistration = true,
+        honorsChangeAnnotations = true,
+        prepareSupport = true,
+        prepareSupportDefaultBehavior = 1
+      },
+      selectionRange = {
+        dynamicRegistration = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = true,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = false,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = true
+        },
+        serverCancelSupport = true,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "decorator", "operator" }
+      },
+      signatureHelp = {
+        contextSupport = true,
+        dynamicRegistration = true,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = true,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      typeHierarchy = {
+        dynamicRegistration = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      codeLens = {
+        refreshSupport = true
+      },
+      configuration = true,
+      diagnostics = {
+        refreshSupport = true
+      },
+      didChangeConfiguration = {
+        dynamicRegistration = true
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+        relativePatternSupport = true
+      },
+      executeCommand = {
+        dynamicRegistration = true
+      },
+      fileOperations = {
+        didCreate = true,
+        didDelete = true,
+        didRename = true,
+        dynamicRegistration = true,
+        willCreate = true,
+        willDelete = true,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      inlineValue = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "location.range" }
+        },
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      workspaceEdit = {
+        changeAnnotationSupport = {
+          groupsOnLabel = false
+        },
+        documentChanges = true,
+        failureHandling = "undo",
+        normalizesLineEndings = true,
+        resourceOperations = { "create", "rename", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "coc.nvim",
+    version = "0.0.82"
+  },
+  initializationOptions = {
+    changeConfiguration = true
+  },
+  locale = "C",
+  processId = 243791,
+  rootPath = "/home/vxy/.config/nvim",
+  rootUri = "file:///home/vxy/.config/nvim",
+  trace = "off",
+  workDoneToken = "65a8ce86-a5f4-4aab-b9fb-b4974d967e0f",
+  workspaceFolders = { {
+      name = "nvim",
+      uri = "file:///home/vxy/.config/nvim"
+    } }
+}
+[05:49:10.365][info] [#0:script/language.lua:137]: VSC language: C
+[05:49:10.365][info] [#0:script/language.lua:138]: LS  language: en-us
+[05:49:10.365][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/vxy/.config/nvim
+[05:49:10.366][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/log/file_home_vxy_.config_nvim.log
+[05:49:10.367][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/vxy/.config/nvim
+[05:49:10.576][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/vxy/.config/nvim
+[05:49:10.576][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[05:49:10.677][info] [#0:script/provider/completion.lua:43]: Enable completion.
+[05:49:10.677][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[05:49:10.677][info] [#0:script/provider/provider.lua:66]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[05:49:10.896][info] [#0:script/plugin.lua:125]: plugin path:	/home/vxy/.config/nvim
+[05:49:10.896][warn] [#0:script/plugin.lua:140]: plugin not found:	/home/vxy/.config/nvim
+[05:49:10.896][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/vxy/.config/nvim
+[05:49:10.913][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[05:49:11.030][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/vxy/.config/nvim
+[05:49:11.034][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/vxy/.config/nvim
+[05:49:11.035][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[05:49:11.041][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[05:49:11.042][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[05:49:11.044][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[05:49:11.044][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[05:49:11.045][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[05:49:11.045][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[05:49:11.045][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[05:49:11.046][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[05:49:11.046][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[05:49:11.046][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[05:49:11.047][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[05:49:11.047][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[05:49:11.048][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[05:49:11.049][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[05:49:11.049][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[05:49:11.049][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[05:49:11.049][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[05:49:11.150][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[05:49:11.150][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[05:49:11.151][info] [#0:script/workspace/workspace.lua:379]: Found 21 files at:	file:///home/vxy/.config/nvim
+[05:49:11.151][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/vxy/.config/nvim
+[05:49:11.152][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
+[05:49:11.175][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[05:49:11.175][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[05:49:11.176][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[05:49:11.178][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[05:49:11.178][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[05:49:11.178][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[05:49:11.179][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
+[05:49:11.184][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[05:49:11.184][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[05:49:11.184][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[05:49:11.184][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.327 KB
+[05:49:11.191][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[05:49:11.191][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[05:49:11.191][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[05:49:11.191][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[05:49:11.203][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[05:49:11.203][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[05:49:11.203][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[05:49:11.203][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[05:49:11.205][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[05:49:11.205][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[05:49:11.205][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[05:49:11.206][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[05:49:11.213][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[05:49:11.213][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[05:49:11.213][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[05:49:11.213][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[05:49:11.221][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[05:49:11.221][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[05:49:11.221][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[05:49:11.221][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[05:49:11.222][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[05:49:11.222][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[05:49:11.222][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[05:49:11.223][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[05:49:11.232][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[05:49:11.232][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[05:49:11.232][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[05:49:11.232][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[05:49:11.234][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[05:49:11.234][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[05:49:11.234][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/vxy/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[05:49:11.235][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.078] sec: <fallback>
+[05:49:11.235][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[05:49:11.235][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[05:49:11.235][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[05:49:11.240][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/init.lua , size = 0.151 KB
+[05:49:11.241][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/plugins/colorscheme.lua , size = 0.151 KB
+[05:49:11.242][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/plugins/coc.lua , size = 0.057 KB
+[05:49:11.242][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/plugins/nvim-autopairs.lua , size = 0.563 KB
+[05:49:11.243][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/plugins/treesitter.lua , size = 0.867 KB
+[05:49:11.244][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/plugins/nvim-tree.lua , size = 0.190 KB
+[05:49:11.244][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/config/keymaps.lua , size = 1.063 KB
+[05:49:11.246][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/config/options.lua , size = 1.181 KB
+[05:49:11.250][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:49:11.250][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/vxy/.config/nvim/lua/config/lazy.lua , size = 1.155 KB
+[05:49:11.252][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.090] sec: file:///home/vxy/.config/nvim
+[05:49:11.252][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/vxy/.config/nvim
+[05:49:11.252][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/vxy/.config/nvim
+[05:49:11.252][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/vxy/.config/nvim
+[05:49:11.257][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/vxy/.config/nvim], files count:[21]
+[05:49:11.513][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/vxy/.config/nvim] finished, takes [0.132] sec.
+[05:51:41.065][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/vxy/.config/nvim
+[05:51:41.066][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[05:51:41.186][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[05:51:41.187][info] [#0:script/provider/provider.lua:66]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[05:52:06.353][info] [#0:script/workspace/workspace.lua:284]: Scan files at:	file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:06.353][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:06.353][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:06.353][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.000] sec: file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:06.353][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:06.353][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/vxy/.config/nvim/lua/config/coc-nvim.lua
+[05:52:08.994][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/vxy/.config/nvim], files count:[21]
+[05:52:09.118][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/vxy/.config/nvim] finished, takes [0.048] sec.

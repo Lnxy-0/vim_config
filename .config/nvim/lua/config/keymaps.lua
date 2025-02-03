@@ -20,6 +20,7 @@ keymap.set({ "n", "v", "s", "o" }, "L", "5l", { noremap = true })
 keymap.set({ "n", "v", "s", "o" }, "S", ":w<CR>", { noremap = true, desc = "Save file" })
 keymap.set({ "n", "v", "s", "o" }, "Q", ":q<CR>", { noremap = true, desc = "Quit Neovim" })
 
+keymap.set("n", "<C-a>", "ggVG", { noremap = true})
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>j", ":NvimTreeFocus<CR>")
