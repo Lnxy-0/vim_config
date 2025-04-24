@@ -2,8 +2,9 @@ return {
 	"nvim-treesitter/playground",
 	{
 		"nvim-treesitter/nvim-treesitter",
+        event = "BufRead",
 		lazy = false,
-		priority = 1000,
+        priority = 1000,
 		build = ":TSUpdate",
 		config = function()
 			vim.opt.smartindent = false
@@ -39,7 +40,8 @@ return {
 						node_decremental  = "<c-h>",
 						scope_incremental = "<c-l>",
 					},
-				}
+				},
+               auto_install = true, 
 			})
 		end
 	},
