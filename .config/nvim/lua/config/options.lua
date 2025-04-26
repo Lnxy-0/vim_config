@@ -14,23 +14,27 @@ opt.wrap = false
 
 -- 光标行
 opt.cursorline = true
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#27408B' })
 
 -- 启用鼠标
 opt.mouse:append("a")
 
 -- 系统剪贴板
---opt.clipboard = "unnamedplus"
 vim.g.clipboard = {
-  name = "xclip",
-  copy = {
-    ["+"] = { "xclip", "-quiet", "-i", "-selection", "clipboard" },
-    ["*"] = { "xclip", "-quiet", "-i", "-selection", "primary" },
-  },
-  paste = {
-    ["+"] = { "xclip", "-o", "-selection", "clipboard" },
-    ["*"] = { "xclip", "-o", "-selection", "primary" },
-  },
-  cache_enabled = 1,
+    name = 'wsl-clip',
+    copy = {
+        ['+'] = 'clip.exe',
+        ['*'] = 'clip.exe',
+    },
+    paste = {
+        ['+'] = function()
+            return vim.fn.systemlist('powershell.exe Get-Clipboard | tr -d "\r"')
+        end,
+        ['*'] = function()
+            return vim.fn.systemlist('powershell.exe Get-Clipboard | tr -d "\r"')
+        end,
+    },
+    cache_enabled = true,
 }
 if os.getenv('SSH_TTY') then
     vim.g.clipboard = {
@@ -53,5 +57,3 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-
-
