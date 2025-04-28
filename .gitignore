@@ -1,0 +1,11 @@
+# Lazy.nvim 的锁文件（若使用 Lazy.nvim）
+lazy-lock.json
+
+*.swp
+*.swo
+*.undo
+*.shada
+*.log
+.session
+parser/
+
