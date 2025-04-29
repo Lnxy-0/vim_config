@@ -25,4 +25,3 @@ keymap.set({ "n", "v", "s", "o" }, "Q", ":q<CR>", { noremap = true, desc = "Quit
 -- 批量快捷键
 keymap.set("n", "<C-a>", "ggVG", { noremap = true })
 keymap.set("v", "<Tab>", "<C-v>I<Tab><Esc>", { noremap = true })
-

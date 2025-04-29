@@ -2,9 +2,9 @@ return {
 	"nvim-treesitter/playground",
 	{
 		"nvim-treesitter/nvim-treesitter",
-        event = "BufRead",
+		event = "BufRead",
 		lazy = false,
-        priority = 1000,
+		priority = 1000,
 		build = ":TSUpdate",
 		config = function()
 			vim.opt.smartindent = false
@@ -17,7 +17,7 @@ return {
 					"javascript",
 					"java",
 					"c",
-                    "cpp",
+					"cpp",
 					"bash",
 					"go",
 					"lua",
@@ -35,14 +35,14 @@ return {
 				incremental_selection = {
 					enable = true,
 					keymaps = {
-						init_selection    = "<c-n>",
-						node_incremental  = "<c-n>",
-						node_decremental  = "<c-h>",
+						init_selection = "<c-n>",
+						node_incremental = "<c-n>",
+						node_decremental = "<c-h>",
 						scope_incremental = "<c-l>",
 					},
 				},
-               auto_install = true, 
+				auto_install = true,
 			})
-		end
+		end,
 	},
 }
